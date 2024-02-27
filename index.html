@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO Web App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <h4 class="mb-3">To-Do List Web App App</h4>
+    </nav>
+
+    <div class="app">
+        <div id="addNew" data-bs-toggle="modal" data-bs-target="#form">
+            <span>Add New Task</span>
+        </div>
+
+        <!-- Modal -->
+        <form class="modal fade" id="form" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Task Title</p>
+                        <input placeholder="Enter the task name ..." type="text" class="form-control" name=""
+                            id="textInput">
+                        <div id="msg"></div>
+                        <hr>
+                        <p>Due Date</p>
+                        <input type="date" class="form-control" name="" id="dateInput">
+                        <hr>
+                        <p>Description</p>
+                        <textarea name="text" class="form-control" id="textarea" placeholder="Description....."
+                            cols="30" rows="5"></textarea>
+                            <hr>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" id="add" class="btn btn-primary">Add</button>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+
+    </div>
+    <div class="taskbar">
+        <h4 class="text-center my-3">My Tasklist</h4>
+        <div id="tasks"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+
+</html>
